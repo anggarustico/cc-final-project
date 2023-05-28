@@ -1,111 +1,23 @@
-# Cloud Computing Group Final Project Assignment
-Welcome to our repository. This is a Cloud Computing final project assignmet.
+Welcome to the HealthCare Pal App!
 
-## Our Team:
-1. Angga Rustico Hadiyanto      21/477976/PA/20721
-2. Dearmen Chandro Rumasingap   21/473866/PA/20437
-3. Muhammad Luthfi Harwidjaya   21/476813/PA/20606
-4. Muhammad Nabil Akbar Mustafa 21/481679/PA/20981
+Description
 
-Yii 2 Basic Project Template
-============================
+HealthCare Pal is a web-based application that primarily utilizes backend technologies such as node.js, express, nodemailer, handlebars, and MySQL. On the front-end, it uses JavaScript and Bootstrap CDN. The primary purpose of the application is to help patients find medical services and their associated costs, as well as the providers offering those services. In addition, providers can use the application to post information about the services they offer, including the associated costs, and can edit this information as needed. Overall, HealthCare Pal serves as a useful tool for both patients and providers in the healthcare industry.
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
+Installation
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+1. To get started with the application, navigate to the repository called "healthcare-pal" on GitHub.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
+2. Clone the repository to your local machine by running the following command: git clone https://github.com/yourusername/healthcare-pal.git.
 
-DIRECTORY STRUCTURE
--------------------
+3. Once the repository is cloned, navigate to the index JavaScript files and run them to initiate the project. You may need to install any necessary dependencies using a package manager like npm.
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+4. To view and test the application locally, open Google Chrome and navigate to localhost:3000 (or the appropriate port number for your project).
 
+5. Once you are satisfied with the local version of the application, you can deploy it globally using Heroku. Follow the appropriate instructions to create a new Heroku app, and then upload your project files to the app.
 
+6. Once the application is deployed, users can access it by navigating to the Heroku app URL in their web browser.
 
-REQUIREMENTS
-------------
+Usage
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
-
-
-INSTALLATION
-------------
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
-```
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
-
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
+Medical service pricing is often concealed from the public, leading to a lack of transparency in the patient-provider relationship. HealthCare Pal seeks to change that by providing prospective patients with access to information on medical services and their associated costs before they make an appointment with a medical provider. This feature allows patients to gain a better understanding of how much a medical service will cost them, and can help them make more informed decisions about their healthcare options. By promoting transparency in medical service pricing, HealthCare Pal aims to improve the overall patient experience and provide patients with greater control over their healthcare decisions.
